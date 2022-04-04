@@ -19,8 +19,8 @@ This repository contains **Dockerfile** of [Ubuntu Desktop (Xfce4)](http://xfce.
 
 ### Usage
 
-
-	docker run -p 5900:5900 gauthierc/dockerspicexfce4
+	docker build -t dockerspice:latest .
+	docker run --rm -p 5900:5900 dockerspice:latest
 
 If you local user is 'myusername' and your uid is '1000' and you want map your /home/myusername in Docker:
 
